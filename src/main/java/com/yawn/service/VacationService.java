@@ -115,6 +115,7 @@ public class VacationService {
 		vars.put("result", result);
 		vars.put("auditor", userName);
 		vars.put("auditTime", new Date());
+		vars.put("auditorremark", "多多努力学习!!");
 		taskService.claim(taskId, userName);
 		taskService.complete(taskId, vars);
 		return true;
